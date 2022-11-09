@@ -1,6 +1,7 @@
 
 import "./globals.css"
 import { DM_Sans } from "@next/font/google"
+import { AnalyticsWrapper } from '../components/Analytics';
 
 const dmSans = DM_Sans({
   weight: ["500", "700"],
@@ -20,7 +21,10 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" href="/favicon.ico" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <AnalyticsWrapper />
+      </body>
     </html>
   )
 }
