@@ -1,0 +1,19 @@
+
+.button {
+  width: 100%;
+  padding: 16px;
+  font-family: var(--dm-sans);
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(74, 74, 74);
+  border: 2px solid black;
+  cursor: pointer;
+
+  display: inline-grid;
+  grid-template-columns: 24px auto 24px;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+}

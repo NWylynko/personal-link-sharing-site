@@ -4,7 +4,8 @@ import { DM_Sans } from "@next/font/google"
 
 const dmSans = DM_Sans({
   weight: ["500", "700"],
-  subsets: ["latin"]
+  subsets: ["latin"],
+  variable: "--dm-sans"
 })
 
 export default function RootLayout({
