@@ -7,13 +7,22 @@
   font-weight: 500;
   color: rgb(74, 74, 74);
   border: 2px solid black;
+  border-radius: 32px;
   cursor: pointer;
 
   display: inline-grid;
   grid-template-columns: 24px auto 24px;
   align-items: center;
+
+  transition: padding 250ms ease-in-out;
+}
+
+.button:hover {
+  padding-top: 20px;
+  padding-bottom: 18px;
 }
 
 .link {
+  border-radius: 32px;
   text-decoration: none;
 }
