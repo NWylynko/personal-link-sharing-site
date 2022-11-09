@@ -10,7 +10,7 @@ interface LinkItemProps {
 
 export const LinkItem = ({ label, url, icon: Icon }: LinkItemProps) => {
   return (
-    <Link href={url} className={styles.link}>
+    <Link href={url} className={styles.link} target="_blank" rel="noopener noreferrer">
       <button className={styles.button}>
         <Icon size={24} />
         <span>{label}</span>
