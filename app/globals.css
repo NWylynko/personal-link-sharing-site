@@ -1,6 +1,11 @@
 
 body {
   background: linear-gradient(rgb(27, 87, 94), rgb(83, 150, 121));
-  height: 100vh;
+
+  margin: 64px 16px;
+  height: calc(100vh - 128px);
+}
+
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
