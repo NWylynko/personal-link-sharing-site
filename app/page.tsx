@@ -29,6 +29,7 @@ export default function HomePage() {
         <LinkItem label="Linkedin" url="https://www.linkedin.com/in/nick-wylynko/" icon={TbBrandLinkedin} />
         <LinkItem label="NPM" url="https://www.npmjs.com/~nwylynko" icon={TbCpu} />
       </Links>
+      <span className={styles.sub}><ExternalLink href="https://github.com/NWylynko/personal-link-sharing-site" className={styles.link}>Fork the repo</ExternalLink> to make you own version.</span>
       <span className={styles.sub}>Built with <ExternalLink href="https://nextjs.org/" className={styles.link}>Next.js</ExternalLink>, deployed to <ExternalLink href="https://vercel.com/" className={styles.link}>Vercel</ExternalLink> from <ExternalLink href="https://github.com/" className={styles.link}>Github</ExternalLink>.</span>
     </div>
   )
