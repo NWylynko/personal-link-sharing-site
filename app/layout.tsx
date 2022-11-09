@@ -15,7 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html className={dmSans.className}>
-      <head></head>
+      <head>
+        <title>Nick Wylynko</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body>{children}</body>
     </html>
   )

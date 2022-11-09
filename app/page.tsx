@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ProfilePic from "../assets/profile.png"
+import ProfilePic from "../public/profile.png"
 import { LinkItem } from "./LinkItem";
 import { Links } from "./Links";
 import styles from "./styles.module.css"
