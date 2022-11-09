@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html className={dmSans.className}>
+    <html lang="en" className={dmSans.className}>
       <head>
         <title>Nick Wylynko</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
