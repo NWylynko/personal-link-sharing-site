@@ -1,0 +1,54 @@
+
+.successContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.form {
+  margin: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.formArea {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+
+}
+
+.input {
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 8px;
+  font-family: var(--dm-sans);
+}
+
+.textarea {
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 8px;
+  font-family: var(--dm-sans);
+}
+
+.error {
+  color: rgb(209, 109, 109);
+}
+
+.submit {
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 8px;
+  font-family: var(--dm-sans);
+  background-color: white;
+  cursor: pointer;
+}

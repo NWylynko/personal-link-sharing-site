@@ -33,3 +33,17 @@
 .link {
   color: #ffffff;
 }
+
+.contactDetails {
+  background-color: #ffffff;
+  width: calc(100% - 32px - 32px);
+  border: 2px solid black;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 32px;
+  max-width: calc(600px - 32px - 32px);
+}
+
+.contactSummary {
+  cursor: pointer;
+}
