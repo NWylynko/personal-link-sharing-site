@@ -5,6 +5,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import { useId } from "react";
 import styles from "./ContactForm.module.css"
 import { TbCheck } from "@react-icons/all-files/tb/TbCheck"
+import { AiOutlineLoading } from "@react-icons/all-files/ai/AiOutlineLoading"
 
 const envSchema = z.object({
   NEXT_PUBLIC_FORMSPREE_TOKEN: z.string()
@@ -58,7 +59,7 @@ export const ContactForm = () => {
       </div>
 
       <button type="submit" disabled={state.submitting} className={styles.submit}>
-        Submit
+        {state.submitting ? "Submitting" : "Submit"}{state.submitting && <AiOutlineLoading className={styles.loadingSpinner} />}
       </button>
     </form>
   )

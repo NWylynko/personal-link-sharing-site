@@ -52,4 +52,22 @@
   background-color: white;
   cursor: pointer;
   color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.submit:disabled {
+  color: grey;
+  cursor: auto;
+}
+
+.loadingSpinner {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
