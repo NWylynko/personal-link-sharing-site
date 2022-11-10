@@ -8,19 +8,19 @@
 }
 
 .image {
-  border-radius: 50%;
+  border-radius: 32px;
 }
 
 .title {
   color: #ffffff;
-  font-size: 20px;
+  /* font-size: 20px; */
   font-weight: 700;
   text-align: center;
 }
 
 .blurb {
   color: #ffffff;
-  font-size: 16px;
+  /* font-size: 16px; */
   font-weight: 500;
   text-align: center;
 }

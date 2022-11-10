@@ -1,0 +1,25 @@
+
+.item {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 32px;
+  width: calc(100% - 32px - 32px);
+  margin: 0 16px;
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.link {
+  color: black;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

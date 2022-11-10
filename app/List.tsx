@@ -1,11 +1,11 @@
 
-import styles from "./Links.module.css"
+import styles from "./List.module.css"
 
 interface LinksProps {
   children: JSX.Element | JSX.Element[]
 }
 
-export const Links = ({ children }: LinksProps) => {
+export const List = ({ children }: LinksProps) => {
   return (
     <div className={styles.container}>
       {children}
