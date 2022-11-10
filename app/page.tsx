@@ -46,5 +46,3 @@ export default function HomePage() {
     </div>
   )
 }
-
-// unnecessary 
