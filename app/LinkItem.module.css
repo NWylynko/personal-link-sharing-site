@@ -28,6 +28,10 @@
   font-size: 18px;
 }
 
+.button:hover > svg {
+  color: #2e6c67;
+}
+
 .link {
   border-radius: 32px;
   text-decoration: none;
