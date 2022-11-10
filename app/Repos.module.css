@@ -6,6 +6,8 @@
   width: calc(100% - 32px - 32px);
   margin: 0 16px;
   padding: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -22,4 +24,9 @@
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+.desc {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }

@@ -37,7 +37,7 @@ const RepoItem = (repo: RepoItemProps) => {
         <span>{repo.primaryLanguage}</span>
       </div>
 
-      <span>{repo.description}</span>
+      <span className={styles.desc}>{repo.description}</span>
 
       <div className={styles.details}>
         <TbStar /><span>Stars: {repo.stargazerCount}</span>
