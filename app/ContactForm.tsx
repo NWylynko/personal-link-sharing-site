@@ -38,7 +38,7 @@ export const ContactForm = () => {
 
       <div className={styles.formArea}>
         <label htmlFor={emailId} className={styles.label}>Email</label>
-        <input id={emailId} type="email" name="email" className={styles.input} />
+        <input id={emailId} type="email" name="email" className={styles.input} required />
         <ValidationError 
           prefix="Email" 
           field="email"
@@ -49,7 +49,7 @@ export const ContactForm = () => {
 
       <div className={styles.formArea}>
         <label htmlFor={messageId} className={styles.label}>Message</label>
-        <textarea id={messageId} name="message" className={styles.textarea} />
+        <textarea id={messageId} name="message" className={styles.textarea} required />
         <ValidationError 
           prefix="Message" 
           field="message"
