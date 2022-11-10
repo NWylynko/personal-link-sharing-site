@@ -51,4 +51,5 @@
   font-family: var(--dm-sans);
   background-color: white;
   cursor: pointer;
+  color: black;
 }
