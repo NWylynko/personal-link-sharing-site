@@ -34,6 +34,8 @@ export const ContactForm = () => {
   }
 
   return (
+    <>
+    <noscript style={{ padding: 32 }}>Javascript needs to be enabled for this form to submit.</noscript>
     <form className={styles.form} onSubmit={handleSubmit}>
 
       <div className={styles.formArea}>
@@ -62,5 +64,6 @@ export const ContactForm = () => {
         {state.submitting ? "Submitting" : "Submit"}{state.submitting && <AiOutlineLoading className={styles.loadingSpinner} />}
       </button>
     </form>
+    </>
   )
 }
