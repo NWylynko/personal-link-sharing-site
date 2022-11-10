@@ -38,7 +38,7 @@ export const ContactForm = () => {
 
       <div className={styles.formArea}>
         <label htmlFor={emailId} className={styles.label}>Email</label>
-        <input id={emailId} type="email" name="email" className={styles.input} required />
+        <input id={emailId} type="email" name="email" className={styles.input} required autoFocus />
         <ValidationError 
           prefix="Email" 
           field="email"

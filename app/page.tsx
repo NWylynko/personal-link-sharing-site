@@ -8,6 +8,7 @@ import { TbBrandGithub } from "@react-icons/all-files/tb/TbBrandGithub"
 import { TbBrandTwitter } from "@react-icons/all-files/tb/TbBrandTwitter"
 import { TbBrandLinkedin } from "@react-icons/all-files/tb/TbBrandLinkedin"
 import { TbCpu } from "@react-icons/all-files/tb/TbCpu"
+import { HiOutlineMail } from "@react-icons/all-files/hi/HiOutlineMail"
 import { ExternalLink } from "../components/ExternalLink";
 import { Repos } from "./Repos";
 import { ContactForm } from "./ContactForm";
@@ -32,12 +33,13 @@ export default function HomePage() {
         <LinkItem label="Twitter" url="https://twitter.com/wylynko" icon={TbBrandTwitter} />
         <LinkItem label="Linkedin" url="https://www.linkedin.com/in/nick-wylynko/" icon={TbBrandLinkedin} />
         <LinkItem label="NPM" url="https://www.npmjs.com/~nwylynko" icon={TbCpu} />
+        <details className={styles.contactDetails}>
+          <summary className={styles.contactSummary}><HiOutlineMail size={24}/>Get in Contact<div /></summary>
+          <ContactForm />
+        </details>
       </List>
-      <h1 style={{ color: "white" }}>Contact Me</h1>
-      <details className={styles.contactDetails}>
-        <summary className={styles.contactSummary}>Click here for contact form 📝</summary>
-        <ContactForm />
-      </details>
+      {/* <h1 style={{ color: "white" }}>Get in touch</h1> */}
+
       <Repos />
       <span className={styles.sub}><ExternalLink href="https://github.com/NWylynko/personal-link-sharing-site" className={styles.link}>Fork the repo</ExternalLink> to make you own version.</span>
       <span className={styles.sub}>Built with <ExternalLink href="https://nextjs.org/" className={styles.link}>Next.js</ExternalLink>, deployed to <ExternalLink href="https://vercel.com/" className={styles.link}>Vercel</ExternalLink> from <ExternalLink href="https://github.com/" className={styles.link}>Github</ExternalLink>.</span>
