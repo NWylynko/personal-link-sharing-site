@@ -36,11 +36,8 @@
 }
 
 .contactDetails {
-  width: calc(100% - 32px - 32px);
-  padding: 16px;
-  padding-bottom: 11px;
+  width: calc(100% - 32px);
   margin: 0 16px;
-  /* max-width: calc(600px - 32px - 32px); */
 
   background-color: #ffffff;
   border: 2px solid black;
@@ -50,15 +47,13 @@
 }
 
 .contactDetails:hover {
-  padding-top: 18px;
-  padding-bottom: 13px;
-  width: calc(100% - 32px);
+  width: 100%;
   margin: 0 0;
-  font-size: 18px;
 }
 
 .contactSummary {
   cursor: pointer;
+  padding: 16px;
   
   display: inline-grid;
   grid-template-columns: 24px auto 24px;
@@ -66,7 +61,15 @@
   justify-items: center;
   justify-content: space-between;
   align-content: center;
-  width: 100%;
+  width: calc(100% - 32px);
+  transition: all 250ms ease-in-out;
+
+}
+
+.contactSummary:hover {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 18px;
 }
 
 .contactSummary > svg {
