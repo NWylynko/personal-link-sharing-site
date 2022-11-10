@@ -76,3 +76,14 @@
 .contactSummary:hover > svg {
   color: #2e6c67;
 }
+
+/* these are here to force the arrow to be hidden */
+.contactDetails,
+.contactSummary {
+  list-style: none;
+}
+
+.contactDetails::-webkit-details-marker,
+.contactSummary::-webkit-details-marker {
+  display:none;
+}
