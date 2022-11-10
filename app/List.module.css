@@ -4,8 +4,8 @@
   flex-direction: column;
 
   gap: 16px;
-  margin: 32px auto;
-  
+  margin: 0px auto 32px auto;
+
   width: 100%;
   max-width: 600px;
 }
