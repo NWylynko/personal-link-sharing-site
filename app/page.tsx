@@ -11,6 +11,7 @@ import { TbCpu } from "@react-icons/all-files/tb/TbCpu"
 import { ExternalLink } from "../components/ExternalLink";
 import { Repos } from "./Repos";
 import { ContactForm } from "./ContactForm";
+import { CodingStats } from "./CodeingStats";
 
 
 export default function HomePage() {
@@ -25,7 +26,8 @@ export default function HomePage() {
         placeholder="blur" />
       <h1 className={styles.title}>Nick Wylynko</h1>
       <h2 className={styles.blurb}>I build projects with Typescript</h2>
-      <List>
+      <CodingStats />
+      <List style={{ marginTop: 32 }}>
         <LinkItem label="Github" url="https://github.com/NWylynko" icon={TbBrandGithub} />
         <LinkItem label="Twitter" url="https://twitter.com/wylynko" icon={TbBrandTwitter} />
         <LinkItem label="Linkedin" url="https://www.linkedin.com/in/nick-wylynko/" icon={TbBrandLinkedin} />

@@ -1,13 +1,12 @@
 
+import { DetailedHTMLProps, HTMLAttributes } from "react"
 import styles from "./List.module.css"
 
-interface LinksProps {
-  children: JSX.Element | JSX.Element[]
-}
+type LinksProps = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 
-export const List = ({ children }: LinksProps) => {
+export const List = ({ children, ...props }: LinksProps) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} {...props}>
       {children}
     </div>
   )
