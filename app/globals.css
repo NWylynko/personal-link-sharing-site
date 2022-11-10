@@ -2,7 +2,7 @@
 body {
   background: linear-gradient(rgb(27, 87, 94), rgb(83, 150, 121));
 
-  margin: 64px 16px;
+  margin: 64px 8px;
   min-height: calc(100vh - 128px);
 }
 
