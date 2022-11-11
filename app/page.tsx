@@ -12,7 +12,7 @@ import { HiOutlineMail } from "@react-icons/all-files/hi/HiOutlineMail"
 import { ExternalLink } from "../components/ExternalLink";
 import { Repos } from "./Repos";
 import { ContactForm } from "./ContactForm";
-import { CodingStats } from "./CodeingStats";
+import { CodingStats } from "./CodingStats";
 
 
 export default function HomePage() {
