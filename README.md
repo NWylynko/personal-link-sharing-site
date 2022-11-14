@@ -9,7 +9,7 @@ Things you can edit to make this your own:
 - The `config.ts` file, this stores a lot of the stuff on the site, this is a great place to start to put in your own links, enable / disable features and more.
 - Swap out the `image`, stored in the public folder, swap it out for a photo of yourself or any profile pic you want. (and the favicon)
 - Edit the `CSS`, stored in the css files is all the styling for the site, make it your own by giving it a make over.
-- Change the font, using the new `@next/fonts` module, you can use any google font or bring in your own one.
+- Change the font, using the new `@next/font` module, you can use any google font or bring in your own one.
 
 ## Features
 
@@ -24,3 +24,9 @@ Want to show off how dedicated you are, Wakatime tracks how long (and on what) y
 
 - ### Vercel Analytics
 Simple, free, respectful analytics, we want to know how many people are looking at our site right.
+
+## New Features
+
+Got a great idea for pulling in data from an api, wanna use a different analytics module, etc?
+
+Create a fork and get to work, if you want help with it open a pr and I will see what I can do. I am more than happy to merge back in any cool features.
