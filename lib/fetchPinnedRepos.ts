@@ -43,7 +43,7 @@ export const fetchPinnedRepos = async (username: string) => {
       query: query.loc?.source.body
     }),
     next: {
-      revalidate: 60 * 60
+      revalidate: 60 * 60 * 8 // every 8 hours
     }
   })
 

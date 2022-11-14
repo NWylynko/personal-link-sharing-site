@@ -14,10 +14,9 @@ import { RiDiscordLine } from "@react-icons/all-files/ri/RiDiscordLine"
 import { ExternalLink } from "../components/ExternalLink";
 import { Repos } from "./Repos";
 import { ContactForm } from "./ContactForm";
-import { CodingStats } from "./CodingStats";
+import { Details } from "./components/Details";
 
-
-export default function HomePage() {
+export default async function HomePage() {
   return (
     <div className={styles.container}>
       <Image
@@ -28,9 +27,8 @@ export default function HomePage() {
         width={96 * 1.5}
         placeholder="blur" />
       <h1 className={styles.title}>Nick Wylynko</h1>
-      <h2 className={styles.blurb}>I build projects with Typescript</h2>
-      <CodingStats />
-      <List style={{ marginTop: 32 }}>
+      <Details />
+      <List style={{ marginTop: 16 }}>
         <LinkItem label="Github" url="https://github.com/NWylynko" icon={TbBrandGithub} />
         <LinkItem label="Twitter" url="https://twitter.com/wylynko" icon={TbBrandTwitter} />
         <LinkItem label="Linkedin" url="https://www.linkedin.com/in/nick-wylynko/" icon={TbBrandLinkedin} />

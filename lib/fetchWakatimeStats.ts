@@ -12,7 +12,7 @@ export const fetchWakatimeStats = async () => {
       Authorization: `Basic ${env.WAKATIME_TOKEN}`
     },
     next: {
-      revalidate: 60 * 60
+      revalidate: 60 * 30 // every 30 minutes
     }
   })
 
@@ -20,7 +20,22 @@ export const fetchWakatimeStats = async () => {
 
   const details = await schema.parseAsync(data);
 
-  return details.data
+  const { hours, minutes } = details.data.grand_total
+
+  if (hours === 0 && minutes === 0) {
+    return `None :(`; // sad haven't done any coding today
+  }
+
+  if (hours === 0) {
+    // haven't done much coding
+    return (
+      `${minutes} Minute${sOrNoS(minutes)}`
+    )
+  }
+
+  return (
+    `${hours} Hour${sOrNoS(hours)} and ${minutes} Minute${sOrNoS(minutes)}`
+  )
 }
 
 // this doesn't include everything the api returns but I don't need most of it
@@ -31,11 +46,13 @@ export const schema = z.object({
       hours: z.number(),
       minutes: z.number(),
     }),
-    languages: z.array(
-      z.object({
-        name: z.string(),
-        total_seconds: z.number()
-      })
-    ),
   })
 })
+
+const sOrNoS = (n: number) => {
+  if (n === 1) {
+    return ''
+  } else {
+    return 's'
+  }
+}
