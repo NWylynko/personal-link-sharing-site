@@ -1,5 +1,5 @@
 import { DropDown } from "~/components/DropDown";
-import { LinkItem } from "~/components/LinkItem";
+import { LinkItem, LinkItemProps } from "~/components/LinkItem";
 import { List } from "~/components/List";
 
 import { HiOutlineMail } from "@react-icons/all-files/hi/HiOutlineMail";
@@ -15,7 +15,7 @@ export const Links = () => {
     <List style={{ marginTop: 16 }}>
 
       {config.links.map((link) => (
-        <LinkItem key={link.label} {...link} />
+        <LinkItem key={link.label} {...link as LinkItemProps} />
       ))}
 
       {contact && <DropDown icon={HiOutlineMail} label="Get in Contact">

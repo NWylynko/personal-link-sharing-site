@@ -2,6 +2,11 @@ import { z } from 'zod';
 import { config } from '~/config';
 
 export const fetchWakatimeStats = async () => {
+
+  if (!config.features.wakatime.enabled) {
+    throw new Error(`feature wakatime is not enabled`)
+  }
+
   const response = await fetch('https://wakatime.com/api/v1/users/current/status_bar/today', {
     headers: {
       Authorization: `Basic ${config.features.wakatime.token()}`

@@ -4,6 +4,10 @@ import { z } from "zod"
 
 export const fetchPinnedRepos = async () => {
 
+  if (!config.features.github.enabled) {
+    throw new Error(`feature github is not enabled`)
+  }
+
   const { username, token } = config.features.github
 
   const query = gql`

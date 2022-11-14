@@ -9,6 +9,10 @@ import { config } from "~/config";
 
 export const FormSpree = () => {
 
+  if (!config.features.formspree.enabled) {
+    throw new Error(`formspree not enabled`)
+  }
+
   const [state, handleSubmit] = useForm(config.features.formspree.token());
 
   const emailId = useId()

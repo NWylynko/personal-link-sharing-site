@@ -6,6 +6,10 @@ import { config } from '~/config';
 
 export const fetchWakatimeStatus = async () => {
 
+  if (!config.features.wakatime.enabled) {
+    throw new Error(`feature wakatime is not enabled`)
+  }
+
   const rightNow = new Date()
   const date = `${rightNow.getFullYear()}-${rightNow.getMonth() + 1}-${rightNow.getDate()}` // wow the date api is trash
 

@@ -24,17 +24,19 @@ const projectSchema = z.object({
   language: z.string()
 })
 
+const reactIcon = z
+  .function()
+  .args(z.object({
+    size: z.union([z.string(), z.number()]).optional(),
+    color: z.string().optional(),
+    title: z.string().optional()
+  }))
+
 const linksSchema = z.array(
   z.object({
     label: z.string(),
     url: z.string().url(),
-    icon: z
-      .function()
-      .args(z.object({
-        size: z.union([z.string(), z.number()]).optional(),
-        color: z.string().optional(),
-        title: z.string().optional()
-      }))
+    icon: reactIcon
   })
 )
 
