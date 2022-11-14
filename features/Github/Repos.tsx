@@ -10,7 +10,7 @@ import { FaExternalLinkSquareAlt } from "@react-icons/all-files/fa/FaExternalLin
 
 export const Repos = async () => {
 
-  const repos = await fetchPinnedRepos("nwylynko")
+  const repos = await fetchPinnedRepos()
 
   return (
     <List>

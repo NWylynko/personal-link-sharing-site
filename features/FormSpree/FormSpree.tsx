@@ -1,25 +1,15 @@
 'use client';
 
-import { z } from "zod"
 import { useForm, ValidationError } from '@formspree/react';
 import { useId } from "react";
 import styles from "./FormSpree.module.css"
 import { TbCheck } from "@react-icons/all-files/tb/TbCheck"
 import { AiOutlineLoading } from "@react-icons/all-files/ai/AiOutlineLoading"
+import { config } from "~/config";
 
-const envSchema = z.object({
-  NEXT_PUBLIC_FORMSPREE_TOKEN: z.string()
-})
+export const FormSpree = () => {
 
-const env = envSchema.parse({
-
-  // gotta be like this for the transform to work correctly
-  NEXT_PUBLIC_FORMSPREE_TOKEN: process.env.NEXT_PUBLIC_FORMSPREE_TOKEN
-})
-
-export const ContactForm = () => {
-
-  const [state, handleSubmit] = useForm(env.NEXT_PUBLIC_FORMSPREE_TOKEN);
+  const [state, handleSubmit] = useForm(config.features.formspree.token());
 
   const emailId = useId()
   const messageId = useId()

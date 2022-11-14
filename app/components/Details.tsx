@@ -1,16 +1,12 @@
-import { fetchWakatimeStats, fetchWakatimeStatus } from "~/features/Wakatime"
+import { config } from "~/config"
 import styles from "./Details.module.css"
+import { WakaStats } from "~/features/Wakatime/WakaStats"
 
-export const Details = async () => {
-
-  const status = await fetchWakatimeStatus()
-  const stats = await fetchWakatimeStats()
-
+export const Details = () => {
   return (
     <ul className={styles.list}>
-      <ListItem label="Weapon of choice" text="Typescript" />
-      <ListItem label="Time coding today" text={stats} />
-      <ListItem label="Status" text={status} />
+      <ListItem label="Weapon of choice" text={config.profile.language} />
+      <WakaStats />
     </ul>
   )
 }
@@ -20,6 +16,6 @@ type ListItemProps = {
   text: string;
 }
 
-const ListItem = ({ label, text }: ListItemProps) => {
+export const ListItem = ({ label, text }: ListItemProps) => {
   return <li className={styles.item}><strong>{label}: </strong>{text}</li>
 }

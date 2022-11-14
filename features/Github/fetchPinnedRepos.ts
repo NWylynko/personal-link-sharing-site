@@ -1,13 +1,10 @@
 import gql from 'graphql-tag';
-import { z } from 'zod';
+import { config } from '~/config';
+import { z } from "zod"
 
-const envSchema = z.object({
-  GITHUB_TOKEN: z.string()
-})
+export const fetchPinnedRepos = async () => {
 
-const env = envSchema.parse(process.env)
-
-export const fetchPinnedRepos = async (username: string) => {
+  const { username, token } = config.features.github
 
   const query = gql`
     {
@@ -37,7 +34,7 @@ export const fetchPinnedRepos = async (username: string) => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: `bearer ${env.GITHUB_TOKEN}`
+      Authorization: `bearer ${token()}`
     },
     body: JSON.stringify({
       query: query.loc?.source.body

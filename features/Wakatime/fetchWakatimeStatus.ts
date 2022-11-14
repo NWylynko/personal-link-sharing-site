@@ -2,12 +2,7 @@
 // using the wakatime heartbeats api endpoint to determine if the user is currently online or not
 
 import { z } from 'zod';
-
-const envSchema = z.object({
-  WAKATIME_TOKEN: z.string()
-})
-
-const env = envSchema.parse(process.env)
+import { config } from '~/config';
 
 export const fetchWakatimeStatus = async () => {
 
@@ -16,7 +11,7 @@ export const fetchWakatimeStatus = async () => {
 
   const response = await fetch(`https://wakatime.com/api/v1/users/current/heartbeats?date=${date}`, {
     headers: {
-      Authorization: `Basic ${env.WAKATIME_TOKEN}`
+      Authorization: `Basic ${config.features.wakatime.token()}`
     },
     next: {
       revalidate: 60 * 30 // every 30 minutes

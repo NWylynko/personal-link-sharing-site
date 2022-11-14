@@ -2,6 +2,7 @@
 import "./globals.css"
 import { DM_Sans } from "@next/font/google"
 import { VercelAnalytics } from '~/features/VercelAnalytics';
+import { config } from "~/config";
 
 const dmSans = DM_Sans({
   weight: ["500", "700"],
@@ -15,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={dmSans.className}>
+    <html lang={config.site.language} className={dmSans.className}>
       <head>
         <title>Nick Wylynko</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />

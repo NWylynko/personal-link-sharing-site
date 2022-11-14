@@ -1,15 +1,10 @@
 import { z } from 'zod';
-
-const envSchema = z.object({
-  WAKATIME_TOKEN: z.string()
-})
-
-const env = envSchema.parse(process.env)
+import { config } from '~/config';
 
 export const fetchWakatimeStats = async () => {
   const response = await fetch('https://wakatime.com/api/v1/users/current/status_bar/today', {
     headers: {
-      Authorization: `Basic ${env.WAKATIME_TOKEN}`
+      Authorization: `Basic ${config.features.wakatime.token()}`
     },
     next: {
       revalidate: 60 * 30 // every 30 minutes

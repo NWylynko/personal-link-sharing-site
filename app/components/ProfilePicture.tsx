@@ -1,13 +1,13 @@
 
 import Image from "next/image";
 import styles from "./ProfilePicture.module.css"
-import ProfilePic from "~/public/profile.png"
+import { config } from "~/config";
 
 export const ProfilePicture = () => {
   return (
     <Image
       className={styles.image}
-      src={ProfilePic}
+      src={config.profile.picture}
       alt="Profile Picture"
       height={96 * 1.5}
       width={96 * 1.5}
