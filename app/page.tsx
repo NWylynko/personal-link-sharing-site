@@ -4,7 +4,7 @@ import { ProfilePicture } from "./components/ProfilePicture";
 import { Title } from "./components/Title";
 import { Details } from "./components/Details";
 import { Links } from "./components/Links";
-import { Repos } from "~/features/Github";
+import { Projects } from "./components/Projects";
 import { Footer } from "./components/Footer";
 
 export default async function HomePage() {
@@ -14,7 +14,7 @@ export default async function HomePage() {
       <Title />
       <Details />
       <Links />
-      <Repos />
+      <Projects />
       <Footer />
     </div>
   )

@@ -13,14 +13,11 @@ export const Repos = async () => {
   const repos = await fetchPinnedRepos("nwylynko")
 
   return (
-    <>
-      <h1 style={{ color: "white" }}>Recent Projects</h1>
-      <List>
-        {repos.map((props) => (
-          <RepoItem key={props.id} {...props} />
-        ))}
-      </List>
-    </>
+    <List>
+      {repos.map((props) => (
+        <RepoItem key={props.id} {...props} />
+      ))}
+    </List>
   )
 
 }
