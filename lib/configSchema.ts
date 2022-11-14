@@ -28,15 +28,25 @@ const linksSchema = z.array(
   z.object({
     label: z.string(),
     url: z.string().url(),
-    icon: z.function()
+    icon: z
+      .function()
+      .args(z.object({
+        size: z.union([z.string(), z.number()]).optional(),
+        color: z.string().optional(),
+        title: z.string().optional()
+      }))
   })
 )
 
+const disabledFeatureSchema = z.object({
+  enabled: z.literal(false)
+})
+
 const featuresSchema = z.object({
-  github: githubSchema,
-  formspree: formSpreeSchema,
-  wakatime: wakatimeSchema,
-  vercelAnalytics: vercelAnalyticsSchema
+  github: z.union([disabledFeatureSchema, githubSchema]),
+  formspree: z.union([disabledFeatureSchema, formSpreeSchema]),
+  wakatime: z.union([disabledFeatureSchema, wakatimeSchema]),
+  vercelAnalytics: z.union([disabledFeatureSchema, vercelAnalyticsSchema])
 })
 
 export const configSchema = z.object({
@@ -47,5 +57,9 @@ export const configSchema = z.object({
 })
 
 export type Config = z.infer<typeof configSchema>
+export type ConfigSite = Config["site"];
+export type ConfigProfile = Config["profile"];
+export type ConfigLinks = Config["links"];
+export type ConfigFeatures = Config["features"];
 
-export const Config = configSchema.parse
+export const Config = configSchema.parse as (config: Config) => Config
