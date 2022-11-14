@@ -4,7 +4,7 @@ import { ProfilePicture } from "./components/ProfilePicture";
 import { Title } from "./components/Title";
 import { Details } from "./components/Details";
 import { Links } from "./components/Links";
-import { Repos } from "./components/Repos";
+import { Repos } from "~/features/Github";
 import { Footer } from "./components/Footer";
 
 export default async function HomePage() {

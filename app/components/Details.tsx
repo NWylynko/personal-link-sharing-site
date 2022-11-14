@@ -1,5 +1,4 @@
-import { fetchWakatimeStats } from "~/lib/fetchWakatimeStats"
-import { fetchWakatimeStatus } from "~/lib/fetchWakatimeStatus"
+import { fetchWakatimeStats, fetchWakatimeStatus } from "~/features/Wakatime"
 import styles from "./Details.module.css"
 
 export const Details = async () => {

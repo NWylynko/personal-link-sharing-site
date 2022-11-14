@@ -1,5 +1,5 @@
 import { ExternalLink } from "~/components/ExternalLink"
-import { fetchPinnedRepos } from "~/lib/fetchPinnedRepos"
+import { fetchPinnedRepos } from "~/features/Github/fetchPinnedRepos"
 import { List } from "~/components/List"
 import styles from "./Repos.module.css"
 

@@ -1,7 +1,7 @@
 
 import "./globals.css"
 import { DM_Sans } from "@next/font/google"
-import { AnalyticsWrapper } from '../components/Analytics';
+import { VercelAnalytics } from '~/features/VercelAnalytics';
 
 const dmSans = DM_Sans({
   weight: ["500", "700"],
@@ -24,7 +24,7 @@ export default function RootLayout({
       </head>
       <body>
         {children}
-        <AnalyticsWrapper />
+        <VercelAnalytics />
       </body>
     </html>
   )
