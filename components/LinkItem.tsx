@@ -1,6 +1,6 @@
 import styles from "./LinkItem.module.css"
 import type { IconType } from "@react-icons/all-files"
-import { ExternalLink } from "../components/ExternalLink";
+import { ExternalLink } from "~/components/ExternalLink";
 
 interface LinkItemProps {
   label: string;

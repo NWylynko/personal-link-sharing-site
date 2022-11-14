@@ -1,6 +1,6 @@
-import { DropDown } from "../../components/DropDown";
-import { LinkItem } from "../../components/LinkItem";
-import { List } from "../../components/List";
+import { DropDown } from "~/components/DropDown";
+import { LinkItem } from "~/components/LinkItem";
+import { List } from "~/components/List";
 
 import { HiOutlineMail } from "@react-icons/all-files/hi/HiOutlineMail";
 import { RiDiscordLine } from "@react-icons/all-files/ri/RiDiscordLine";
@@ -9,7 +9,7 @@ import { TbBrandLinkedin } from "@react-icons/all-files/tb/TbBrandLinkedin";
 import { TbBrandTwitter } from "@react-icons/all-files/tb/TbBrandTwitter";
 import { TbCpu } from "@react-icons/all-files/tb/TbCpu";
 
-import { ContactForm } from "../../features/FormSpree";
+import { ContactForm } from "~/features/FormSpree";
 
 export const Links = () => {
   return (

@@ -1,4 +1,4 @@
-import { ExternalLink } from "../../components/ExternalLink";
+import { ExternalLink } from "~/components/ExternalLink";
 import styles from "./Footer.module.css"
 
 export const Footer = () => {

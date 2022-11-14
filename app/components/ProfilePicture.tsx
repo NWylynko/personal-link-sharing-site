@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import styles from "./ProfilePicture.module.css"
-import ProfilePic from "../../public/profile.png"
+import ProfilePic from "~/public/profile.png"
 
 export const ProfilePicture = () => {
   return (

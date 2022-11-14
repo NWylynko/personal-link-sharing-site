@@ -1,6 +1,6 @@
-import { ExternalLink } from "../../components/ExternalLink"
-import { fetchPinnedRepos } from "../../lib/fetchPinnedRepos"
-import { List } from "../../components/List"
+import { ExternalLink } from "~/components/ExternalLink"
+import { fetchPinnedRepos } from "~/lib/fetchPinnedRepos"
+import { List } from "~/components/List"
 import styles from "./Repos.module.css"
 
 import { TbStar } from "@react-icons/all-files/tb/TbStar"
