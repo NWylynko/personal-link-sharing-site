@@ -31,8 +31,6 @@ export const fetchWakatimeStatus = async () => {
 
   const offset = new Date(lastHeartbeat).getTime() - rightNow.getTime()
 
-  console.log({ offset })
-
   const toleranceOnline = 60 * 1000 // one minute
   const toleranceAway = 60 * 1000 * 10 // ten minutes
 

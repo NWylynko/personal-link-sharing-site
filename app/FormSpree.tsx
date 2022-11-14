@@ -3,7 +3,7 @@
 import { z } from "zod"
 import { useForm, ValidationError } from '@formspree/react';
 import { useId } from "react";
-import styles from "./ContactForm.module.css"
+import styles from "./FormSpree.module.css"
 import { TbCheck } from "@react-icons/all-files/tb/TbCheck"
 import { AiOutlineLoading } from "@react-icons/all-files/ai/AiOutlineLoading"
 

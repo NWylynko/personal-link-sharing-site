@@ -1,0 +1,56 @@
+
+.details {
+  width: calc(100% - 32px);
+  margin: 0 16px;
+
+  background-color: #ffffff;
+  border: 2px solid black;
+  border-radius: 32px;
+
+  transition: all 250ms ease-in-out;
+}
+
+.details:hover {
+  width: 100%;
+  margin: 0 0;
+}
+
+.summary {
+  cursor: pointer;
+  padding: 16px;
+  
+  display: inline-grid;
+  grid-template-columns: 24px auto 24px;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  align-content: center;
+  width: calc(100% - 32px);
+  transition: all 250ms ease-in-out;
+
+}
+
+.summary:hover {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 18px;
+}
+
+.summary > svg {
+  color: #3c4140;
+}
+
+.summary:hover > svg {
+  color: #2e6c67;
+}
+
+/* these are here to force the arrow to be hidden */
+.details,
+.summary {
+  list-style: none;
+}
+
+.details::-webkit-details-marker,
+.summary::-webkit-details-marker {
+  display:none;
+}
