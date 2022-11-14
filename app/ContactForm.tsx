@@ -35,35 +35,35 @@ export const ContactForm = () => {
 
   return (
     <>
-    <noscript style={{ padding: 32 }}>Javascript needs to be enabled for this form to submit.</noscript>
-    <form className={styles.form} onSubmit={handleSubmit}>
+      <noscript style={{ padding: 32 }}>Javascript needs to be enabled for this form to submit.</noscript>
+      <form className={styles.form} onSubmit={handleSubmit}>
 
-      <div className={styles.formArea}>
-        <label htmlFor={emailId} className={styles.label}>Email</label>
-        <input id={emailId} type="email" name="email" className={styles.input} required autoFocus />
-        <ValidationError 
-          prefix="Email" 
-          field="email"
-          errors={state.errors}
-          className={styles.error}
-        />
-      </div>
+        <div className={styles.formArea}>
+          <label htmlFor={emailId} className={styles.label}>Email</label>
+          <input id={emailId} type="email" name="email" className={styles.input} required autoFocus />
+          <ValidationError 
+            prefix="Email" 
+            field="email"
+            errors={state.errors}
+            className={styles.error}
+          />
+        </div>
 
-      <div className={styles.formArea}>
-        <label htmlFor={messageId} className={styles.label}>Message</label>
-        <textarea id={messageId} name="message" className={styles.textarea} required />
-        <ValidationError 
-          prefix="Message" 
-          field="message"
-          errors={state.errors}
-          className={styles.error}
-        />
-      </div>
+        <div className={styles.formArea}>
+          <label htmlFor={messageId} className={styles.label}>Message</label>
+          <textarea id={messageId} name="message" className={styles.textarea} required />
+          <ValidationError 
+            prefix="Message" 
+            field="message"
+            errors={state.errors}
+            className={styles.error}
+          />
+        </div>
 
-      <button type="submit" disabled={state.submitting} className={styles.submit}>
-        {state.submitting ? "Submitting" : "Submit"}{state.submitting && <AiOutlineLoading className={styles.loadingSpinner} />}
-      </button>
-    </form>
+        <button type="submit" disabled={state.submitting} className={styles.submit}>
+          {state.submitting ? "Submitting" : "Submit"}{state.submitting && <AiOutlineLoading className={styles.loadingSpinner} />}
+        </button>
+      </form>
     </>
   )
 }

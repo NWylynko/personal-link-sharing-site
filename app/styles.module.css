@@ -7,17 +7,6 @@
   gap: 16px;
 }
 
-.image {
-  border-radius: 32px;
-}
-
-.title {
-  color: #ffffff;
-  /* font-size: 20px; */
-  font-weight: 700;
-  text-align: center;
-}
-
 .blurb {
   color: #ffffff;
   /* font-size: 16px; */

@@ -14,19 +14,16 @@ import { RiDiscordLine } from "@react-icons/all-files/ri/RiDiscordLine"
 import { ExternalLink } from "../components/ExternalLink";
 import { Repos } from "./Repos";
 import { ContactForm } from "./ContactForm";
+
+import { ProfilePicture } from "./components/ProfilePicture";
 import { Details } from "./components/Details";
+import { Title } from "./components/Title";
 
 export default async function HomePage() {
   return (
     <div className={styles.container}>
-      <Image
-        className={styles.image}
-        src={ProfilePic}
-        alt="Profile Picture"
-        height={96 * 1.5}
-        width={96 * 1.5}
-        placeholder="blur" />
-      <h1 className={styles.title}>Nick Wylynko</h1>
+      <ProfilePicture />
+      <Title />
       <Details />
       <List style={{ marginTop: 16 }}>
         <LinkItem label="Github" url="https://github.com/NWylynko" icon={TbBrandGithub} />
