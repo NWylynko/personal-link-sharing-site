@@ -9,6 +9,8 @@ import { TbBrandTwitter } from "@react-icons/all-files/tb/TbBrandTwitter"
 import { TbBrandLinkedin } from "@react-icons/all-files/tb/TbBrandLinkedin"
 import { TbCpu } from "@react-icons/all-files/tb/TbCpu"
 import { HiOutlineMail } from "@react-icons/all-files/hi/HiOutlineMail"
+import { RiDiscordLine } from "@react-icons/all-files/ri/RiDiscordLine"
+
 import { ExternalLink } from "../components/ExternalLink";
 import { Repos } from "./Repos";
 import { ContactForm } from "./ContactForm";
@@ -37,9 +39,8 @@ export default function HomePage() {
           <summary className={styles.contactSummary}><HiOutlineMail size={24}/>Get in Contact<div /></summary>
           <ContactForm />
         </details>
+        <LinkItem label="Discord" url="https://discordapp.com/users/272984261433491456" icon={RiDiscordLine} />
       </List>
-      {/* <h1 style={{ color: "white" }}>Get in touch</h1> */}
-
       <Repos />
       <span className={styles.sub}><ExternalLink href="https://github.com/NWylynko/personal-link-sharing-site" className={styles.link}>Fork the repo</ExternalLink> to make you own version.</span>
       <span className={styles.sub}>Built with <ExternalLink href="https://nextjs.org/" className={styles.link}>Next.js</ExternalLink>, deployed to <ExternalLink href="https://vercel.com/" className={styles.link}>Vercel</ExternalLink>.</span>
