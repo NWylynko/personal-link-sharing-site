@@ -4,13 +4,14 @@ import { ListItem } from "~/app/components/Details";
 
 export const WakaStats = FeatureToggle("wakatime", async () => {
 
-  const status = await fetchWakatimeStatus();
+  // this is broken cuz timezones im guess, can't be bothering fixing it rn
+  // const status = await fetchWakatimeStatus();
   const stats = await fetchWakatimeStats();
 
   return (
     <>
       <ListItem label="Time coding today" text={stats} />
-      <ListItem label="Status" text={status} />
+      {/* <ListItem label="Status" text={status} /> */}
     </>
   );
 });
