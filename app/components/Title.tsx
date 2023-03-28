@@ -1,7 +1,6 @@
 
 import { config } from "~/config"
-import styles from "./Title.module.css"
 
 export const Title = () => {
-  return <h1 className={styles.title}>{config.profile.name}</h1>
+  return <h1 className="text-white font-bold text-center text-4xl">{config.profile.name}</h1>
 }

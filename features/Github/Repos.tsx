@@ -41,8 +41,8 @@ const RepoItem = (repo: RepoItemProps) => {
         {repo.forkCount !== 0 && <><span> | </span><TbGitFork /><span>Forks: {repo.forkCount}</span></>}
       </div>
       <div className={styles.details}>
-        <FaGithubSquare /><ExternalLink className={styles.link} href={repo.url}>Repo</ExternalLink>
-        {repo.homepageUrl && <><span> | </span><FaExternalLinkSquareAlt /><ExternalLink className={styles.link} href={repo.homepageUrl}>Link</ExternalLink></>}
+        <FaGithubSquare /><ExternalLink className="text-black" href={repo.url}>Repo</ExternalLink>
+        {repo.homepageUrl && <><span> | </span><FaExternalLinkSquareAlt /><ExternalLink className="text-black" href={repo.homepageUrl}>Link</ExternalLink></>}
       </div>
     </div>
   )

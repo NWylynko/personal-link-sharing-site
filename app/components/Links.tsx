@@ -12,7 +12,7 @@ const contact = isFeatureEnabled("formspree")
 
 export const Links = () => {
   return (
-    <List style={{ marginTop: 16 }}>
+    <List>
 
       {config.links.map((link) => (
         <LinkItem key={link.label} {...link as LinkItemProps} />

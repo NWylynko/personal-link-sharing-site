@@ -13,10 +13,10 @@ export type LinkItemProps = {
 
 export const LinkItem = ({ label, url, icon: Icon }: LinkItemProps) => {
   return (
-    <ExternalLink href={url} className={styles.link}>
+    <ExternalLink href={url} className="rounded-[32px] no-underline">
       <button className={styles.button} tabIndex={-1}>
         <Icon size={24} />
-        <span>{label}</span>
+        <span className="no-underline">{label}</span>
         <div />
       </button>
     </ExternalLink>

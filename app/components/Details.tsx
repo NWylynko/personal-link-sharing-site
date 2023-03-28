@@ -1,10 +1,8 @@
-import { config } from "~/config"
-import styles from "./Details.module.css"
 import { WakaStats } from "~/features/Wakatime/WakaStats"
 
 export const Details = () => {
   return (
-    <ul className={styles.list}>
+    <ul className="text-white py-0 px-2 my-0 mx-2 flex flex-col gap-1" style={{ listStyleType: "'> '" }}>
       {/* <ListItem label="Weapon of choice" text={config.profile.language} /> */}
       <WakaStats />
     </ul>
@@ -17,5 +15,5 @@ type ListItemProps = {
 }
 
 export const ListItem = ({ label, text }: ListItemProps) => {
-  return <li className={styles.item}>{label ? <strong>{label} </strong> : undefined}{text}</li>
+  return <li>{label ? <strong>{label} </strong> : undefined}{text}</li>
 }

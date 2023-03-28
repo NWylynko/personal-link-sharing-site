@@ -1,12 +1,11 @@
 
 import { FeatureToggle } from "~/components/Feature"
 import { Repos } from "~/features/Github"
-import styles from "./Projects.module.css"
 
 export const Projects = FeatureToggle("github", () => {
   return (
     <>
-      <h1 className={styles.title}>Recent OSS Projects</h1>
+      <h2 className="text-white text-3xl">Recent OSS Projects</h2>
       <Repos />
     </>
   )

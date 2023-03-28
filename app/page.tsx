@@ -1,5 +1,3 @@
-import styles from "./styles.module.css";
-
 import { ProfilePicture } from "./components/ProfilePicture";
 import { Title } from "./components/Title";
 import { Details } from "./components/Details";
@@ -9,7 +7,7 @@ import { Footer } from "./components/Footer";
 
 export default async function HomePage() {
   return (
-    <div className={styles.container}>
+    <div className="flex flex-col items-center content-center gap-4">
       <ProfilePicture />
       <Title />
       <Details />
