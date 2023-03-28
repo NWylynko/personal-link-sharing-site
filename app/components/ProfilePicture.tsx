@@ -5,7 +5,7 @@ import { config } from "~/config";
 export const ProfilePicture = () => {
   return (
     <Image
-      className="rounded-[32px]"
+      className="rounded-[32px] shadow-xl"
       src={config.profile.picture}
       alt="Profile Picture"
       height={96 * 2.0}
