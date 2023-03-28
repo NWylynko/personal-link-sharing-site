@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "packageManager": "pnpm@2.27.1",
+  "packageManager": "pnpm@7.27.1",
   "dependencies": {
     "@formspree/react": "^2.4.1",
     "@next/font": "^13.0.3",
