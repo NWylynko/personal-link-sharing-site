@@ -9,8 +9,8 @@ export const ProfilePicture = () => {
       className={styles.image}
       src={config.profile.picture}
       alt="Profile Picture"
-      height={96 * 1.5}
-      width={96 * 1.5}
+      height={96 * 2.0}
+      width={96 * 2.0}
       placeholder="blur" />
   )
 }
