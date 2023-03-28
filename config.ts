@@ -1,13 +1,14 @@
 import { Config } from "./lib/configSchema";
 
 import { z } from "zod"
-import ProfilePic from "~/public/profile.png"
+import ProfilePic from "~/public/profile.jpg"
 
 import { RiDiscordLine } from "@react-icons/all-files/ri/RiDiscordLine";
 import { TbBrandLinkedin } from "@react-icons/all-files/tb/TbBrandLinkedin";
 import { TbBrandTwitter } from "@react-icons/all-files/tb/TbBrandTwitter";
 import { TbCpu } from "@react-icons/all-files/tb/TbCpu";
 import { TbBrandGithub } from "@react-icons/all-files/tb/TbBrandGithub";
+import { HiOutlinePuzzle } from "@react-icons/all-files/hi/HiOutlinePuzzle";
 
 
 const serverEnvSchema = z.object({
@@ -35,6 +36,11 @@ export const config = Config({
     language: "Typescript"
   },
   links: [
+    {
+      label: "Playful Systems",
+      url: "https://playful-systems.com.au",
+      icon: HiOutlinePuzzle
+    },
     {
       label: "Github",
       url: "https://github.com/NWylynko",

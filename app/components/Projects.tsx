@@ -6,7 +6,7 @@ import styles from "./Projects.module.css"
 export const Projects = FeatureToggle("github", () => {
   return (
     <>
-      <h1 className={styles.title}>Recent (Forever WIP) Projects</h1>
+      <h1 className={styles.title}>Recent OSS Projects</h1>
       <Repos />
     </>
   )
