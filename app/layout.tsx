@@ -1,6 +1,6 @@
 
 import "./globals.css"
-import { DM_Sans } from "@next/font/google"
+import { DM_Sans } from "next/font/google"
 import { VercelAnalytics } from '~/features/VercelAnalytics';
 import { config } from "~/config";
 
