@@ -23,7 +23,7 @@ export const fetchWakatimeStats = async () => {
   const { hours, minutes } = details.data.grand_total
 
   if (hours === 0 && minutes === 0) {
-    return `None :(`; // sad haven't done any coding today
+    return `No time spent`; // sad haven't done any coding today
   }
 
   if (hours === 0) {
