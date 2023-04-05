@@ -25,7 +25,7 @@
   justify-items: center;
   justify-content: space-between;
   align-content: center;
-  width: calc(100% - 32px);
+  width: 100%;
   transition: all 250ms ease-in-out;
 
 }
