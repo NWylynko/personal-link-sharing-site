@@ -5,13 +5,13 @@ import { twMerge } from "tailwind-merge"
 const styles = "border-2 border-white border-solid"
 export const ProfilePicture = () => {
   return (
-    <div className="flex flex-row justify-center max-w-lg w-[100vw] gap-0 sm:gap-2 md:gap-4 mb-4">
+    <div className="flex flex-row justify-center max-w-lg w-[90vw] gap-2 sm:gap-4 md:gap-8 mb-4">
       {config.profile.pictures.map((props) => (
         <Image
           key={props.key}
           className={
             twMerge(
-              "rounded-[32px] w-auto h-auto max-h-[192px] object-cover",
+              "rounded-[32px] w-auto max-w-[45vw] h-auto max-h-[192px] object-cover",
               props.className
             )
           }
