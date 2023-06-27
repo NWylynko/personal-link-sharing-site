@@ -1,7 +1,6 @@
 import { Config } from "./lib/configSchema";
 
 import { z } from "zod"
-import ProfilePic from "~/public/profile.jpg"
 
 import { RiDiscordLine } from "@react-icons/all-files/ri/RiDiscordLine";
 import { TbBrandLinkedin } from "@react-icons/all-files/tb/TbBrandLinkedin";
@@ -9,6 +8,11 @@ import { TbBrandTwitter } from "@react-icons/all-files/tb/TbBrandTwitter";
 import { TbCpu } from "@react-icons/all-files/tb/TbCpu";
 import { TbBrandGithub } from "@react-icons/all-files/tb/TbBrandGithub";
 import { HiOutlinePuzzle } from "@react-icons/all-files/hi/HiOutlinePuzzle";
+
+import ProfilePic from "~/assets/profile.jpg"
+import NBGW_PNG from "~/assets/NBGW.png"
+import NBGW_PNG_WHITE from "~/assets/NBGW white.png"
+import NBGW_SVG_WHITE from "~/assets/NBGW white.svg"
 
 
 const serverEnvSchema = z.object({
@@ -32,7 +36,18 @@ export const config = Config({
   },
   profile: {
     name: "Nick Wylynko",
-    picture: ProfilePic,
+    pictures: [
+      {
+        key: "profile",
+        image: ProfilePic,
+        alt: "Nick Wylynko",
+      },
+      {
+        key: "NBGW",
+        image: NBGW_SVG_WHITE,
+        alt: "NBGW",
+      }
+    ],
     language: "Typescript"
   },
   links: [
@@ -84,5 +99,25 @@ export const config = Config({
     vercelAnalytics: {
       enabled: true
     }
+  },
+  seo: {
+    title: "Nick Wylynko",
+    icons: [
+      {
+        rel: "icon",
+        url: NBGW_PNG.src,
+        "media": "(prefers-color-scheme:no-preference)",
+      },
+      {
+        rel: "icon",
+        url: NBGW_PNG_WHITE.src,
+        "media": "(prefers-color-scheme:dark)",
+      },
+      {
+        rel: "icon",
+        url: NBGW_PNG.src,
+        "media": "(prefers-color-scheme:light)",
+      }
+    ]
   }
 })

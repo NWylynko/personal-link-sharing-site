@@ -10,7 +10,7 @@ export const WakaStats = FeatureToggle("wakatime", async () => {
 
   return (
     <>
-      <ListItem label={stats} text={`coding today`} />
+      <ListItem label={stats} text={"coding today"} />
       {/* <ListItem label="Status" text={status} /> */}
     </>
   );

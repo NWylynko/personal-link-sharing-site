@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { z } from "zod";
 import { formSpreeSchema } from "~/features/FormSpree/schema";
 import { githubSchema } from "~/features/Github/schema";
@@ -20,7 +21,12 @@ const StaticImageData = z.object({
 
 const projectSchema = z.object({
   name: z.string(),
-  picture: StaticImageData,
+  pictures: z.array(z.object({
+    key: z.string(),
+    image: StaticImageData,
+    alt: z.string(),
+    className: z.string().optional()
+  })),
   language: z.string()
 })
 
@@ -55,7 +61,8 @@ export const configSchema = z.object({
   site: siteSchema,
   profile: projectSchema,
   links: linksSchema,
-  features: featuresSchema
+  features: featuresSchema,
+  seo: z.any().default({}) as z.ZodType<Metadata>
 })
 
 export type Config = z.infer<typeof configSchema>
@@ -63,5 +70,6 @@ export type ConfigSite = Config["site"];
 export type ConfigProfile = Config["profile"];
 export type ConfigLinks = Config["links"];
 export type ConfigFeatures = Config["features"];
+export type ConfigSeo = Config["seo"];
 
 export const Config = configSchema.parse as (config: Config) => Config
