@@ -46,6 +46,7 @@ export const config = Config({
         key: "NBGW",
         image: NBGW_SVG_WHITE,
         alt: "NBGW",
+        className: "border-2 border-white border-solid"
       }
     ],
     language: "Typescript"

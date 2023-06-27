@@ -10,14 +10,14 @@ export const ProfilePicture = () => {
           key={props.key}
           className={
             twMerge(
-              "rounded-[32px] w-auto h-auto max-h-[128px] object-cover",
+              "rounded-[32px] w-auto h-auto max-h-[192px] object-cover",
               props.className
             )
           }
           src={props.image}
           alt={props.alt}
-          height={64 * 2}
-          width={64 * 2}
+          height={64 * 3}
+          width={64 * 3}
         />
       ))}
     </div>
