@@ -2,6 +2,7 @@ import Image from "next/image";
 import { config } from "~/config";
 import { twMerge } from "tailwind-merge"
 
+const styles = "border-2 border-white border-solid"
 export const ProfilePicture = () => {
   return (
     <div className="flex flex-row justify-center max-w-lg w-[100vw] gap-0 sm:gap-2 md:gap-4 mb-4">
