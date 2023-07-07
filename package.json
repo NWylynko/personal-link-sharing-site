@@ -10,7 +10,7 @@
   "packageManager": "pnpm@7.27.1",
   "dependencies": {
     "@formspree/react": "^2.4.1",
-    "@react-icons/all-files": "https://github.com/react-icons/react-icons/releases/download/v4.6.0/react-icons-all-files-4.6.0.tgz",
+    "@react-icons/all-files": "https://github.com/react-icons/react-icons/releases/download/v4.10.1/react-icons-all-files-4.10.1.tgz",
     "@vercel/analytics": "^1.0.1",
     "eslint": "8.33.0",
     "eslint-config-next": "^13.2.4",

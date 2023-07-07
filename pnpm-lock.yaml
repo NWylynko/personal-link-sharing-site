@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@formspree/react': ^2.4.1
-  '@react-icons/all-files': https://github.com/react-icons/react-icons/releases/download/v4.6.0/react-icons-all-files-4.6.0.tgz
+  '@react-icons/all-files': https://github.com/react-icons/react-icons/releases/download/v4.10.1/react-icons-all-files-4.10.1.tgz
   '@types/node': 18.11.9
   '@types/react': 18.0.25
   '@vercel/analytics': ^1.0.1

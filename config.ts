@@ -13,6 +13,8 @@ import ProfilePic from "~/assets/profile.jpg"
 import NBGW_PNG from "~/assets/NBGW.png"
 import NBGW_PNG_WHITE from "~/assets/NBGW white.png"
 import NBGW_SVG_WHITE from "~/assets/NBGW white.svg"
+import { Threads } from "./components/Threads";
+import { CopyTravel } from "./components/CopyTravel";
 
 
 const serverEnvSchema = z.object({
@@ -53,6 +55,11 @@ export const config = Config({
   },
   links: [
     {
+      label: "Copy Travel",
+      url: "https://copytravel.app",
+      icon: CopyTravel
+    },
+    {
       label: "Playful Systems",
       url: "https://playful-systems.com.au",
       icon: HiOutlinePuzzle
@@ -61,6 +68,11 @@ export const config = Config({
       label: "Github",
       url: "https://github.com/NWylynko",
       icon: TbBrandGithub
+    },
+    {
+      label: "Threads",
+      url: "https://www.threads.net/@nwylynko",
+      icon: Threads
     },
     {
       label: "Twitter",
