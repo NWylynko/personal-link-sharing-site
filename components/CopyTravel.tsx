@@ -4,8 +4,7 @@ import type { IconType } from "@react-icons/all-files"
 
 export const CopyTravel: IconType = () => {
 	return (
-		<svg x="0px" y="0px"
-			viewBox="0 0 68 68" style={{ enableBackground: "new 0 0 68 68" }}>
+		<svg x="0px" y="0px" viewBox="0 0 68 68">
 			<g>
 				<path d="M2.7,30.8c0.2-2.1,0.3-4.3,0.7-6.4c0.4-2,1.2-4,2.1-5.9c0.8-1.8,1.7-3.7,2.9-5.4c1.2-1.6,2.6-3.1,4.1-4.5
 		c2.9-2.8,6.3-4.6,9.9-6.2c2-0.9,4.2-1.2,6.3-1.6c2.2-0.4,4.3-0.3,6.5-0.3c8.5,0.3,16.1,5.1,21.5,11.5c0.6,0.7,1.4,1.6,1.8,2.4
