@@ -9,7 +9,7 @@ specifiers:
   autoprefixer: ^10.4.14
   eslint: 8.33.0
   eslint-config-next: ^13.2.4
-  graphql: ^16.6.0
+  graphql: ^16.8.1
   graphql-tag: ^2.12.6
   next: ^13.4.7
   postcss: ^8.4.24
@@ -25,12 +25,12 @@ specifiers:
 
 dependencies:
   '@formspree/react': 2.4.1_biqbaboplfbrettd7655fr4n2y
-  '@react-icons/all-files': '@github.com/react-icons/react-icons/releases/download/v4.6.0/react-icons-all-files-4.6.0.tgz_react@18.2.0'
+  '@react-icons/all-files': '@github.com/react-icons/react-icons/releases/download/v4.10.1/react-icons-all-files-4.10.1.tgz_react@18.2.0'
   '@vercel/analytics': 1.0.1
   eslint: 8.33.0
   eslint-config-next: 13.2.4_cetx5pbwfjbljzjkry6qvqqqyi
-  graphql: 16.6.0
-  graphql-tag: 2.12.6_graphql@16.6.0
+  graphql: 16.8.1
+  graphql-tag: 2.12.6_graphql@16.8.1
   next: 13.4.7_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -385,6 +385,7 @@ packages:
   /@babel/plugin-proposal-unicode-property-regex/7.18.6_@babel+core@7.22.5:
     resolution: {integrity: sha512-2BShG/d5yoZyXZfVePH91urL5wTG6ASZU9M4o03lKK8u8UW1y08OMttBSOADTcJrnPMpvDXRG3G8fyLh4ovs8w==}
     engines: {node: '>=4'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-unicode-property-regex instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
@@ -4866,18 +4867,18 @@ packages:
     resolution: {integrity: sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==}
     dev: false
 
-  /graphql-tag/2.12.6_graphql@16.6.0:
+  /graphql-tag/2.12.6_graphql@16.8.1:
     resolution: {integrity: sha512-FdSNcu2QQcWnM2VNvSCCDCVS5PpPqpzgFT8+GXzqJuoDd0CBncxCY278u4mhRO7tMgo2JjgJA5aZ+nWSQ/Z+xg==}
     engines: {node: '>=10'}
     peerDependencies:
       graphql: ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      graphql: 16.6.0
+      graphql: 16.8.1
       tslib: 2.5.0
     dev: false
 
-  /graphql/16.6.0:
-    resolution: {integrity: sha512-KPIBPDlW7NxrbT/eh4qPXz5FiFdL5UbaA0XUNz2Rp3Z3hqBSkbj0GVjwFDztsWVauZUWsbKHgMg++sk8UX0bkw==}
+  /graphql/16.8.1:
+    resolution: {integrity: sha512-59LZHPdGZVh695Ud9lRzPBVTtlX9ZCV150Er2W43ro37wVof0ctenSaskPPjN7lVTIN8mSZt8PHUNKZuNQUuxw==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
     dev: false
 
@@ -8292,6 +8293,7 @@ packages:
   /vm2/3.9.19:
     resolution: {integrity: sha512-J637XF0DHDMV57R6JyVsTak7nIL8gy5KH4r1HiwWLf/4GBbb5MKL5y7LpmF4A8E2nR6XmzpmMFQ7V7ppPTmUQg==}
     engines: {node: '>=6.0'}
+    deprecated: The library contains critical security issues and should not be used for production! The maintenance of the project has been discontinued. Consider migrating your code to isolated-vm.
     hasBin: true
     dependencies:
       acorn: 8.9.0
@@ -8468,11 +8470,11 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
 
-  '@github.com/react-icons/react-icons/releases/download/v4.6.0/react-icons-all-files-4.6.0.tgz_react@18.2.0':
-    resolution: {tarball: https://github.com/react-icons/react-icons/releases/download/v4.6.0/react-icons-all-files-4.6.0.tgz}
-    id: '@github.com/react-icons/react-icons/releases/download/v4.6.0/react-icons-all-files-4.6.0.tgz'
+  '@github.com/react-icons/react-icons/releases/download/v4.10.1/react-icons-all-files-4.10.1.tgz_react@18.2.0':
+    resolution: {tarball: https://github.com/react-icons/react-icons/releases/download/v4.10.1/react-icons-all-files-4.10.1.tgz}
+    id: '@github.com/react-icons/react-icons/releases/download/v4.10.1/react-icons-all-files-4.10.1.tgz'
     name: '@react-icons/all-files'
-    version: 4.6.0
+    version: 4.10.1
     peerDependencies:
       react: '*'
     dependencies:
