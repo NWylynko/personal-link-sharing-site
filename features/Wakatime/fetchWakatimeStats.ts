@@ -18,6 +18,8 @@ export const fetchWakatimeStats = async () => {
 
   const data = await response.json()
 
+  console.log("wakatime time data", data)
+
   const details = await schema.parseAsync(data);
 
   const { hours, minutes } = details.data.grand_total

@@ -24,6 +24,8 @@ export const fetchWakatimeStatus = async () => {
 
   const data = await response.json()
 
+  console.log("wakatime online data", data)
+
   const { data: details } = await schema.parseAsync(data);
 
   const { created_at: lastHeartbeat } = details[details.length - 1]
