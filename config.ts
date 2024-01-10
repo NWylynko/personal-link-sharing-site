@@ -12,7 +12,7 @@ import { HiOutlinePuzzle } from "@react-icons/all-files/hi/HiOutlinePuzzle";
 import ProfilePic from "~/assets/profile.jpg"
 import NBGW_PNG from "~/assets/NBGW.png"
 import NBGW_PNG_WHITE from "~/assets/NBGW white.png"
-import NBGW_SVG_WHITE from "~/assets/NBGW white.svg"
+// import NBGW_SVG_WHITE from "~/assets/NBGW white.svg"
 import { Threads } from "./components/Threads";
 import { CopyTravel } from "./components/CopyTravel";
 
@@ -44,21 +44,21 @@ export const config = Config({
         image: ProfilePic,
         alt: "Nick Wylynko",
       },
-      {
-        key: "NBGW",
-        image: NBGW_SVG_WHITE,
-        alt: "NBGW",
-        className: "border-2 border-white border-solid"
-      }
+      // {
+      //   key: "NBGW",
+      //   image: NBGW_SVG_WHITE,
+      //   alt: "NBGW",
+      //   className: "border-2 border-white border-solid"
+      // }
     ],
     language: "Typescript"
   },
   links: [
-    {
-      label: "Copy Travel",
-      url: "https://copytravel.app",
-      icon: CopyTravel
-    },
+    // {
+    //   label: "Copy Travel",
+    //   url: "https://copytravel.app",
+    //   icon: CopyTravel
+    // },
     {
       label: "Playful Systems",
       url: "https://playful-systems.com.au",

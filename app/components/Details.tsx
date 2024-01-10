@@ -1,12 +1,17 @@
+import { Suspense } from "react"
 import { WakaStats } from "~/features/Wakatime/WakaStats"
+import { DetailsError } from "./DetailsError"
 
 export const Details = () => {
   return (
     <ul className="text-white py-0 px-2 my-0 mx-2 flex flex-col gap-1" style={{ listStyleType: "'> '" }}>
       {/* <ListItem label="Weapon of choice" text={config.profile.language} /> */}
 
-      {/* @ts-expect-error rsc */}
-      <WakaStats />
+      <DetailsError>
+        <Suspense>
+          <WakaStats />
+        </Suspense>
+      </DetailsError>
     </ul>
   )
 }
