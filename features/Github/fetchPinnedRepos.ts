@@ -50,7 +50,7 @@ export const fetchPinnedRepos = async () => {
 
   const data = await response.json()
 
-  console.log("github data", data)
+  // console.log("github data", data)
 
   const result = await schema.parseAsync(data)
 
