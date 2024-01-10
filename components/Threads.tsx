@@ -2,7 +2,6 @@ import type { IconType } from "@react-icons/all-files"
 
 
 export const Threads: IconType = (props) => {
-  console.log(props)
   return (
     <>
       <svg stroke="currentColor" aria-label="Threads" viewBox="0 0 192 192" height={`${props.size}px`} width={`${props.size}px`} xmlns="http://www.w3.org/2000/svg">
