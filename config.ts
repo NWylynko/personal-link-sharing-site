@@ -14,7 +14,7 @@ import NBGW_PNG from "~/assets/NBGW.png"
 import NBGW_PNG_WHITE from "~/assets/NBGW white.png"
 // import NBGW_SVG_WHITE from "~/assets/NBGW white.svg"
 import { Threads } from "./components/Threads";
-import { CopyTravel } from "./components/CopyTravel";
+// import { CopyTravel } from "./components/CopyTravel";
 
 
 const serverEnvSchema = z.object({
