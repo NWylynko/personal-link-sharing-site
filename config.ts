@@ -102,8 +102,8 @@ export const config = Config({
       username: "nwylynko"
     },
     formspree: {
-      enabled: true,
-      token: () => clientEnv().NEXT_PUBLIC_FORMSPREE_TOKEN
+      enabled: false,
+      // token: () => clientEnv().NEXT_PUBLIC_FORMSPREE_TOKEN
     },
     wakatime: {
       enabled: true,
