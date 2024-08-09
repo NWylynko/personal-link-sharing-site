@@ -15,6 +15,7 @@ import NBGW_PNG_WHITE from "~/assets/NBGW white.png"
 // import NBGW_SVG_WHITE from "~/assets/NBGW white.svg"
 import { Threads } from "./components/Threads";
 // import { CopyTravel } from "./components/CopyTravel";
+import { SpaceSync } from "./components/SpaceSync";
 
 
 const serverEnvSchema = z.object({
@@ -54,6 +55,11 @@ export const config = Config({
     language: "Typescript"
   },
   links: [
+    {
+      label: "SpaceSync",
+      url: "https://spacesync.com.au",
+      icon: SpaceSync
+    },
     // {
     //   label: "Copy Travel",
     //   url: "https://copytravel.app",
